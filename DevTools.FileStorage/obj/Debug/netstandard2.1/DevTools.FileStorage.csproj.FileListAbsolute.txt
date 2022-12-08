@@ -1,0 +1,10 @@
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.csproj.AssemblyReference.cache
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.GeneratedMSBuildEditorConfig.editorconfig
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.AssemblyInfoInputs.cache
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.AssemblyInfo.cs
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.csproj.CoreCompileInputs.cache
+D:\HomeTraining\DevTools\DevTools.FileStorage\bin\Debug\netstandard2.1\DevTools.FileStorage.deps.json
+D:\HomeTraining\DevTools\DevTools.FileStorage\bin\Debug\netstandard2.1\DevTools.FileStorage.dll
+D:\HomeTraining\DevTools\DevTools.FileStorage\bin\Debug\netstandard2.1\DevTools.FileStorage.pdb
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.dll
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\netstandard2.1\DevTools.FileStorage.pdb

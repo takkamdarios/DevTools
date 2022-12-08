@@ -1,0 +1,15 @@
+D:\C SHARP\DevTools\DevTools.Test\bin\Debug\net6.0\DevTools.Test.exe
+D:\C SHARP\DevTools\DevTools.Test\bin\Debug\net6.0\DevTools.Test.deps.json
+D:\C SHARP\DevTools\DevTools.Test\bin\Debug\net6.0\DevTools.Test.runtimeconfig.json
+D:\C SHARP\DevTools\DevTools.Test\bin\Debug\net6.0\DevTools.Test.dll
+D:\C SHARP\DevTools\DevTools.Test\bin\Debug\net6.0\DevTools.Test.pdb
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.csproj.AssemblyReference.cache
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.AssemblyInfoInputs.cache
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.AssemblyInfo.cs
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.csproj.CoreCompileInputs.cache
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.dll
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\refint\DevTools.Test.dll
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.pdb
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\DevTools.Test.genruntimeconfig.cache
+D:\C SHARP\DevTools\DevTools.Test\obj\Debug\net6.0\ref\DevTools.Test.dll

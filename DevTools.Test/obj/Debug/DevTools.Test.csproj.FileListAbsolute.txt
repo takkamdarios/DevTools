@@ -1,0 +1,14 @@
+D:\HomeTraining\DevTools\DevTools.Test\obj\Debug\DevTools.Test.csproj.AssemblyReference.cache
+D:\HomeTraining\DevTools\DevTools.Test\obj\Debug\DevTools.Test.csproj.SuggestedBindingRedirects.cache
+D:\HomeTraining\DevTools\DevTools.Test\obj\Debug\DevTools.Test.csproj.CoreCompileInputs.cache
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.Test.exe.config
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.Test.exe
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.Test.pdb
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.Designer.dll
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.FileStorage.dll
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\Newtonsoft.Json.dll
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.Designer.pdb
+D:\HomeTraining\DevTools\DevTools.Test\bin\Debug\DevTools.FileStorage.pdb
+D:\HomeTraining\DevTools\DevTools.Test\obj\Debug\DevTools.Test.csproj.CopyComplete
+D:\HomeTraining\DevTools\DevTools.Test\obj\Debug\DevTools.Test.exe
+D:\HomeTraining\DevTools\DevTools.Test\obj\Debug\DevTools.Test.pdb

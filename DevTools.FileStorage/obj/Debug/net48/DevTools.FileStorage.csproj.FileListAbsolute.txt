@@ -1,0 +1,11 @@
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.csproj.AssemblyReference.cache
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.GeneratedMSBuildEditorConfig.editorconfig
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.AssemblyInfoInputs.cache
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.AssemblyInfo.cs
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.csproj.CoreCompileInputs.cache
+D:\HomeTraining\DevTools\DevTools.FileStorage\bin\Debug\net48\DevTools.FileStorage.dll
+D:\HomeTraining\DevTools\DevTools.FileStorage\bin\Debug\net48\DevTools.FileStorage.pdb
+D:\HomeTraining\DevTools\DevTools.FileStorage\bin\Debug\net48\Newtonsoft.Json.dll
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.csproj.CopyComplete
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.dll
+D:\HomeTraining\DevTools\DevTools.FileStorage\obj\Debug\net48\DevTools.FileStorage.pdb

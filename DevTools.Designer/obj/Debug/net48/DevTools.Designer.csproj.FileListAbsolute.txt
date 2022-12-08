@@ -1,0 +1,9 @@
+D:\HomeTraining\DevTools\DevTools.Designer\bin\Debug\net48\DevTools.Designer.dll
+D:\HomeTraining\DevTools\DevTools.Designer\bin\Debug\net48\DevTools.Designer.pdb
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.csproj.AssemblyReference.cache
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.AssemblyInfoInputs.cache
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.AssemblyInfo.cs
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.csproj.CoreCompileInputs.cache
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.dll
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\net48\DevTools.Designer.pdb

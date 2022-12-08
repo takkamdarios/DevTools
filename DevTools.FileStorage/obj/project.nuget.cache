@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "EkO3uZOzyjb1j5g746davZXdYYHbE6CB4V6AEaV5jw+cQOIbIxA1C9xD8s1wD+EQZz15pExKhVMHyWyHeIGFWw==",
+  "success": true,
+  "projectFilePath": "D:\\C #\\BasicDevTools-master\\DevTools.FileStorage\\DevTools.FileStorage.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\32465\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,10 @@
+D:\HomeTraining\DevTools\DevTools.Designer\bin\Debug\netstandard2.1\DevTools.Designer.deps.json
+D:\HomeTraining\DevTools\DevTools.Designer\bin\Debug\netstandard2.1\DevTools.Designer.dll
+D:\HomeTraining\DevTools\DevTools.Designer\bin\Debug\netstandard2.1\DevTools.Designer.pdb
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.csproj.AssemblyReference.cache
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.GeneratedMSBuildEditorConfig.editorconfig
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.AssemblyInfoInputs.cache
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.AssemblyInfo.cs
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.csproj.CoreCompileInputs.cache
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.dll
+D:\HomeTraining\DevTools\DevTools.Designer\obj\Debug\netstandard2.1\DevTools.Designer.pdb
