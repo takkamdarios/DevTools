@@ -10,8 +10,16 @@ namespace DevTools.ADO.Repositories
     /// <summary>
     /// This class describe all methods that will be manage in contact repository
     /// </summary>
-    internal interface IContactRepository : IBaseRepository<Contact>
+    public interface IContactRepository : IBaseRepository<Contact>
     {
-        
+        IEnumerable<Contact> GetAllContacts();
+
+        Contact GetContactById(int id);
+
+        void Add(Contact entity);
+
+        void Update(Contact contact);
+
+        void Delete(int id);
     }
 }

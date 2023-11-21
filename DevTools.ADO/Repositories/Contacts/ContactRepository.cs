@@ -11,10 +11,10 @@ namespace DevTools.ADO.Repositories.Contacts
     /// <summary>
     /// This class manage all methods describe in IContactRepository
     /// </summary>
-    internal class ContactRepository : IContactRepository
+    public class ContactRepository : IContactRepository
     {
         #region Properties (Private)
-        private readonly string connectionString;
+        private readonly string _connectionString;
         #endregion
 
         #region Constructors
@@ -23,7 +23,7 @@ namespace DevTools.ADO.Repositories.Contacts
         /// </summary>
         public ContactRepository()
         {
-            connectionString = "Data Source=localhost;port=3306;Initial Catalog=contact_management_db;User Id=root;password=@susOwijO1";
+            _connectionString = "Data Source=localhost;port=3306;Initial Catalog=contact_management_db;User Id=root;password=@susOwijO1";
             //connectionString = "Data Source=localhost user=root password=@susOwijO1";
         }
         #endregion
@@ -31,7 +31,7 @@ namespace DevTools.ADO.Repositories.Contacts
         #region Methods (Public)
         public void Add(Contact entity)
         {
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (MySqlConnection con = new MySqlConnection(_connectionString))
             {
                 MySqlCommand cmd = new MySqlCommand("sp_create_contact", con);
                 // specify that we use store procedure
@@ -57,7 +57,7 @@ namespace DevTools.ADO.Repositories.Contacts
 
         public void Delete(int id)
         {
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (MySqlConnection con = new MySqlConnection(_connectionString))
             {
                 MySqlCommand cmd = new MySqlCommand("sp_delete_contact", con);
                 // specify that we use store procedure
@@ -77,7 +77,7 @@ namespace DevTools.ADO.Repositories.Contacts
         public Contact Get(int id)
         {
             Contact contact = null;
-            using (var con = new MySqlConnection(connectionString))
+            using (var con = new MySqlConnection(_connectionString))
             {
                 var cmd = new MySqlCommand("sp_get_contact", con);
                 // specify that we use store procedure
@@ -116,7 +116,7 @@ namespace DevTools.ADO.Repositories.Contacts
         public ICollection<Contact> GetAll()
         {
             List<Contact> contacts = new List<Contact>();
-            using (var con = new MySqlConnection(connectionString))
+            using (var con = new MySqlConnection(_connectionString))
             {
                 var cmd = new MySqlCommand("sp_get_contacts", con);
                 // specify that we use store procedure
@@ -153,7 +153,7 @@ namespace DevTools.ADO.Repositories.Contacts
 
         public void Update(int id, Contact entity)
         {
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (MySqlConnection con = new MySqlConnection(_connectionString))
             {
                 MySqlCommand cmd = new MySqlCommand("sp_update_contact", con);
                 // specify that we use store procedure
