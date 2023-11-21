@@ -10,13 +10,20 @@ namespace DevTools.ADO.Repositories.Comments
     /// <summary>
     /// This class describe all methods that will be manage in comment repository
     /// </summary>
-    internal interface ICommentRepository : IBaseRepository<Comment>
+    public interface ICommentRepository : IBaseRepository<Comment>
     {
         /// <summary>
         /// This method get all comments concerned by the contact in parameter
         /// </summary>
         /// <param name="contactId">Represent the id of the contact</param>
         /// <returns></returns>
-        ICollection<Comment> GetAllByContact(int contactId);
+        ICollection<Comment> GetAllComments();
+
+        IEnumerable<Comment> GetAllComments();
+        Comment GetCommentById(int id);
+        void Add(Comment entity);
+        void UpdateComment(Comment comment);
+        void DeleteComment(int id);
+
     }
 }

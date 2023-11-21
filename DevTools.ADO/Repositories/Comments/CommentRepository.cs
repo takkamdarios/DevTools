@@ -11,10 +11,10 @@ namespace DevTools.ADO.Repositories.Comments
     /// <summary>
     /// This class manages all the methods described in ICommentRepository
     /// </summary>
-    internal class CommentRepository : ICommentRepository
+    public class CommentRepository : ICommentRepository
     {
         #region Properties (Private)
-        private readonly string connectionString;
+        private readonly string _connectionString;
         #endregion
 
         #region Constructors
@@ -23,15 +23,41 @@ namespace DevTools.ADO.Repositories.Comments
         /// </summary>
         public CommentRepository()
         {
-            connectionString = "Data Source=localhost;port=3306;Initial Catalog=contact_management_db;User Id=root;password=@susOwijO1";
+            _connectionString = "Data Source=localhost;port=3306;Initial Catalog=contact_management_db;User Id=root;password=@susOwijO1";
             //connectionString = "Data Source=localhost user=root password=@susOwijO1";
         }
         #endregion
 
         #region Methods (Public)
+
+
+        public IEnumerable<Comment> GetAllComments(){
+            var comments = new List<Comment>();
+
+            using (var connection = new MySqlConnection(_connectionString)){
+                connection.Open();
+
+                var command = new MySqlCommand("SELECT * FROM comments", connection);
+
+                using (var reader = command.ExecuteReader()){
+                    while (reader.Read()){
+                        comments.Add(new Comment{
+                            Id = reader.GetInt32("id"),
+                            Content = reader.GetString("content"),
+                            ContactId = reader.GetInt32("contact_id"),
+                            CreateOn = reader.IsDBNull(3) ? (DateTime?)null : reader.GetDateTime("createon"),
+                            UpdateOn = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime("updateon"),
+                        });
+                    }
+                }
+            }
+            return comments;
+        }
+
+
         public void Add(Comment entity)
         {
-            using (MySqlConnection con = new MySqlConnection(connectionString))
+            using (MySqlConnection con = new MySqlConnection(_connectionString))
             {
                 MySqlCommand cmd = new MySqlCommand("sp_create_comment", con);
                 // specify that we use store procedure
@@ -50,47 +76,18 @@ namespace DevTools.ADO.Repositories.Comments
             }
         }
 
-        public void Delete(int id)
-        {
-            using (MySqlConnection con = new MySqlConnection(connectionString))
-            {
-                MySqlCommand cmd = new MySqlCommand("sp_delete_comment", con);
-                // specify that we use store procedure
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
+        public CommentRepository GetCommentById(int id){
+            var comment = new CommentRepository();
 
-                // define the parameters of store procedure / request
-                cmd.Parameters.AddWithValue("_id", id);
+            using (var connection = new MySqlConnection(_connectionString)){
+                connection.Open();
 
-                con.Open();
-                // 1 = success ; -1 = failed
-                var status = cmd.ExecuteNonQuery();
+                var command = new MySqlCommand("SELECT * FROM comments WHERE id = @id", connection);
+                command.Parameters.AddWithValue("@id", id);
 
-                con.Close();
-            }
-        }
-
-        public Comment Get(int id)
-        {
-            Comment comment = null;
-            using (var con = new MySqlConnection(connectionString))
-            {
-                var cmd = new MySqlCommand("sp_get_comment", con);
-                // specify that we use store procedure
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-                // define the parameters of store procedure / request
-                cmd.Parameters.AddWithValue("_id", id);
-
-                con.Open();
-                MySqlDataReader reader = cmd.ExecuteReader();
-
-                // fetch data if rows exists
-                if (reader.HasRows)
-                {
-                    while (reader.Read())
-                    {
-                        comment = new Comment()
-                        {
+                using (var reader = command.ExecuteReader()){
+                    while (reader.Read()){
+                        comment = new CommentRepository{
                             Id = reader.GetInt32("id"),
                             Content = reader.GetString("content"),
                             ContactId = reader.GetInt32("contact_id"),
@@ -103,10 +100,35 @@ namespace DevTools.ADO.Repositories.Comments
             return comment;
         }
 
+        public void UpdateComment(Comment comment){
+            using (var connection = new MySqlConnection(_connectionString)){
+                connection.Open();
+
+                var command = new MySqlCommand("UPDATE comments SET content = @content, contact_id = @contact_id, updateon = @updateon WHERE id = @id", connection);
+                command.Parameters.AddWithValue("@id", comment.Id);
+                command.Parameters.AddWithValue("@content", comment.Content);
+                command.Parameters.AddWithValue("@contact_id", comment.ContactId);
+                command.Parameters.AddWithValue("@updateon", DateTime.Now.ToString("yyyy/MM/dd"));
+
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteComment(int id){
+            using (var connection = new MySqlConnection(_connectionString)){
+                connection.Open();
+
+                var command = new MySqlCommand("DELETE FROM comments WHERE id = @id", connection);
+                command.Parameters.AddWithValue("@id", id);
+
+                command.ExecuteNonQuery();
+            }
+        }
+
         public ICollection<Comment> GetAll()
         {
             List<Comment> comments = new List<Comment>();
-            using (var con = new MySqlConnection(connectionString))
+            using (var con = new MySqlConnection(_connectionString))
             {
                 var cmd = new MySqlCommand("sp_get_comments", con);
                 // specify that we use store procedure
@@ -139,7 +161,7 @@ namespace DevTools.ADO.Repositories.Comments
         public ICollection<Comment> GetAllByContact(int contactId)
         {
             List<Comment> comments = new List<Comment>();
-            using (var con = new MySqlConnection(connectionString))
+            using (var con = new MySqlConnection(_connectionString))
             {
                 var cmd = new MySqlCommand("sp_get_comments_by_contact", con);
                 // specify that we use store procedure
@@ -173,27 +195,6 @@ namespace DevTools.ADO.Repositories.Comments
             return comments;
         }
 
-        public void Update(int id, Comment entity)
-        {
-            using (MySqlConnection con = new MySqlConnection(connectionString))
-            {
-                MySqlCommand cmd = new MySqlCommand("sp_update_comment", con);
-                // specify that we use store procedure
-                cmd.CommandType = System.Data.CommandType.StoredProcedure;
-
-                // define the parameters of store procedure / request
-                cmd.Parameters.AddWithValue("_id", id);
-                cmd.Parameters.AddWithValue("_content", entity.Content);
-                cmd.Parameters.AddWithValue("_contact_id", entity.ContactId);
-                cmd.Parameters.AddWithValue("_updateon", DateTime.Now.ToString("yyyy/MM/dd"));
-
-                con.Open();
-                // 1 = success ; -1 = failed
-                var status = cmd.ExecuteNonQuery();
-
-                con.Close();
-            }
-        }
         #endregion
     }
 }
