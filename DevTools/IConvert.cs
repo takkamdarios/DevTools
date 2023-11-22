@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DevTools
 {
-    internal interface IConvert
+    public interface IConvert
     {
+        string ConvertToString(object obj);
+        object ConvertFromString(string str, Type type);
     }
 }

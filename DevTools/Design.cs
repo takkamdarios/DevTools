@@ -9,6 +9,6 @@ namespace DevTools
 
     public  partial class Design : IDesign
     {
-
+        //Design application logic
     }
 }

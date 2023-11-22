@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DevTools
 {
-    internal interface IDesign : IConvert
+    public interface IDesign : IConvert
     {
+        void ApplyDesign();
     }
 }
