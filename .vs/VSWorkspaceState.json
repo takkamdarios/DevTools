@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\DevTools.ADO",
-    "\\DevTools.Test"
+    "\\DevTools"
   ],
-  "SelectedNode": "\\DevTools.ADO\\Properties",
+  "SelectedNode": "\\DevTools\\DevTools.csproj",
   "PreviewInSolutionExplorer": false
 }

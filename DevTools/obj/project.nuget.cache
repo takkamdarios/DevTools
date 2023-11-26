@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "XjEcJBZQ6CU/deBfy+agMNeaWZCHgZ5uXwImUt6Yf49+E1YcvpaP/L5Imrf04NXidPF9hn01LdZAFm3m4O83qQ==",
-  "success": true,
-  "projectFilePath": "D:\\C SHARP\\DevTools\\DevTools\\DevTools.csproj",
+  "dgSpecHash": "KcNSJJWl+W8paZE8jKcLpxAFebIhDHDzDUG3DLhZI+J7tklKogGI1SxCD5Lsm1Gj1AKFpU4YX55vv2MmetxGLw==",
+  "success": false,
+  "projectFilePath": "D:\\DevTools\\DevTools\\DevTools.csproj",
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

@@ -22,6 +22,6 @@ namespace DevTools
     }
     public  partial class Design
     {
-
+        
     }
 }

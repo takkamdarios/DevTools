@@ -1,45 +1,28 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
-      "DevTools.Test/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/DevTools.Test.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DevTools.Test.dll": {}
-        }
-      }
-    }
+    "net6.0": {}
   },
-  "libraries": {
-    "DevTools.Test/1.0.0": {
-      "type": "project",
-      "path": "../DevTools.Test/DevTools.Test.csproj",
-      "msbuildProject": "../DevTools.Test/DevTools.Test.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DevTools.Test >= 1.0.0"
+      "D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ALGORITHME TAKAM\\.nuget\\packages\\": {}
+    "C:\\Users\\takka\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C SHARP\\DevTools\\DevTools\\DevTools.csproj",
+      "projectUniqueName": "D:\\DevTools\\DevTools\\DevTools.csproj",
       "projectName": "DevTools",
-      "projectPath": "D:\\C SHARP\\DevTools\\DevTools\\DevTools.csproj",
-      "packagesPath": "C:\\Users\\ALGORITHME TAKAM\\.nuget\\packages\\",
-      "outputPath": "D:\\C SHARP\\DevTools\\DevTools\\obj\\",
+      "projectPath": "D:\\DevTools\\DevTools\\DevTools.csproj",
+      "packagesPath": "C:\\Users\\takka\\.nuget\\packages\\",
+      "outputPath": "D:\\DevTools\\DevTools\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ALGORITHME TAKAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\takka\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +36,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\C SHARP\\DevTools\\DevTools.Test\\DevTools.Test.csproj": {
-              "projectPath": "D:\\C SHARP\\DevTools\\DevTools.Test\\DevTools.Test.csproj"
+            "D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj": {
+              "projectPath": "D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj"
             }
           }
         }
@@ -74,7 +57,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -83,8 +67,19 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\DevTools\\DevTools.Test\\DevTools.Test.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
